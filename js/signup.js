@@ -18,7 +18,7 @@ function signUp() {
       password: passwordSignInput.value,
     };
     if (emailSignInput.value === "" || passwordSignInput.value === "" || nameInput.value === "") {
-        msg.textContent = "All inputs are required";
+        msg.textContent = "All inputs is required";
         msg.style.cssText = "color: red !important" 
 
         return;
@@ -46,7 +46,7 @@ function signUp() {
       });
 
       function isValidEmail(email) {
-        let emailRegex = /^.{32}(yahoo|gmail){1}\.com/;
+        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         return emailRegex.test(email);
       }
       function isNewEmail(email) {
