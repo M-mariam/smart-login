@@ -1,0 +1,27 @@
+:root{
+     --color: #17A2B8 ;
+     --main-color: #80bdff;
+}
+
+.container h1{
+
+    color: var(--color)
+}
+
+.form-control:focus{
+    border-color:var(--main-color);
+}
+.btn-outline-primary{
+    border-color: var(--main-color);
+
+}
+.btn{
+    color: var(--color)
+}
+.btn:hover{
+   background-color: var(--main-color);
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
